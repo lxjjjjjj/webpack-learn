@@ -12,6 +12,7 @@ class Compiler {
     this.options = options;
     // 相对路径跟路径 Context参数
     this.rootPath = this.options.context || toUnixPath(process.cwd());
+    console.log('rootPath', this.rootPath)
     // 创建plugin hooks
     this.hooks = {
       // 开始编译时的钩子
